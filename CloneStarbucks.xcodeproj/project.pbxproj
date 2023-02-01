@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091268AB2989539300E98A9E /* IMG_1755.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 091268AA2989539300E98A9E /* IMG_1755.jpg */; };
 		0970AB102988D71D00513CE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970AB0F2988D71D00513CE3 /* AppDelegate.swift */; };
 		0970AB122988D71D00513CE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970AB112988D71D00513CE3 /* SceneDelegate.swift */; };
 		0970AB142988D71D00513CE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970AB132988D71D00513CE3 /* ViewController.swift */; };
 		0970AB172988D71D00513CE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0970AB152988D71D00513CE3 /* Main.storyboard */; };
 		0970AB192988D71E00513CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0970AB182988D71E00513CE3 /* Assets.xcassets */; };
 		0970AB1C2988D71E00513CE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0970AB1A2988D71E00513CE3 /* LaunchScreen.storyboard */; };
+		0970AB2D2988D87100513CE3 /* pngegg-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0970AB2C2988D87100513CE3 /* pngegg-3.png */; };
+		0970AB2F2988D8B000513CE3 /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970AB2E2988D8B000513CE3 /* Homepage.swift */; };
+		09F296F52988E26F00A60337 /* home_img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F296F42988E26F00A60337 /* home_img1.jpg */; };
+		09F296F72988E78400A60337 /* IMG_1754 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F296F62988E78400A60337 /* IMG_1754 2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		091268AA2989539300E98A9E /* IMG_1755.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1755.jpg; path = ../../../../Downloads/IMG_1755.jpg; sourceTree = "<group>"; };
 		0970AB0C2988D71D00513CE3 /* CloneStarbucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloneStarbucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0970AB0F2988D71D00513CE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0970AB112988D71D00513CE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		0970AB182988D71E00513CE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0970AB1B2988D71E00513CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0970AB1D2988D71E00513CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0970AB2C2988D87100513CE3 /* pngegg-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pngegg-3.png"; path = "../../../../Downloads/pngegg-3.png"; sourceTree = "<group>"; };
+		0970AB2E2988D8B000513CE3 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
+		09F296F42988E26F00A60337 /* home_img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = home_img1.jpg; path = ../../../../Downloads/home_img1.jpg; sourceTree = "<group>"; };
+		09F296F62988E78400A60337 /* IMG_1754 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "IMG_1754 2.jpg"; path = "../../../../Downloads/IMG_1754 2.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +73,29 @@
 				0970AB182988D71E00513CE3 /* Assets.xcassets */,
 				0970AB1A2988D71E00513CE3 /* LaunchScreen.storyboard */,
 				0970AB1D2988D71E00513CE3 /* Info.plist */,
+				0970AB292988D85200513CE3 /* IMG */,
+				0970AB282988D84500513CE3 /* Page */,
 			);
 			path = CloneStarbucks;
+			sourceTree = "<group>";
+		};
+		0970AB282988D84500513CE3 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				0970AB2E2988D8B000513CE3 /* Homepage.swift */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		0970AB292988D85200513CE3 /* IMG */ = {
+			isa = PBXGroup;
+			children = (
+				09F296F62988E78400A60337 /* IMG_1754 2.jpg */,
+				091268AA2989539300E98A9E /* IMG_1755.jpg */,
+				09F296F42988E26F00A60337 /* home_img1.jpg */,
+				0970AB2C2988D87100513CE3 /* pngegg-3.png */,
+			);
+			name = IMG;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +156,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F296F52988E26F00A60337 /* home_img1.jpg in Resources */,
 				0970AB1C2988D71E00513CE3 /* LaunchScreen.storyboard in Resources */,
+				09F296F72988E78400A60337 /* IMG_1754 2.jpg in Resources */,
+				091268AB2989539300E98A9E /* IMG_1755.jpg in Resources */,
 				0970AB192988D71E00513CE3 /* Assets.xcassets in Resources */,
 				0970AB172988D71D00513CE3 /* Main.storyboard in Resources */,
+				0970AB2D2988D87100513CE3 /* pngegg-3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +176,7 @@
 				0970AB142988D71D00513CE3 /* ViewController.swift in Sources */,
 				0970AB102988D71D00513CE3 /* AppDelegate.swift in Sources */,
 				0970AB122988D71D00513CE3 /* SceneDelegate.swift in Sources */,
+				0970AB2F2988D8B000513CE3 /* Homepage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
