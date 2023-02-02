@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		091268AB2989539300E98A9E /* IMG_1755.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 091268AA2989539300E98A9E /* IMG_1755.jpg */; };
+		09566F8D298B8A4F00DF6683 /* OrderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09566F8C298B8A4F00DF6683 /* OrderPage.swift */; };
 		0970AB102988D71D00513CE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970AB0F2988D71D00513CE3 /* AppDelegate.swift */; };
 		0970AB122988D71D00513CE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970AB112988D71D00513CE3 /* SceneDelegate.swift */; };
 		0970AB142988D71D00513CE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970AB132988D71D00513CE3 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		091268AA2989539300E98A9E /* IMG_1755.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1755.jpg; path = ../../../../Downloads/IMG_1755.jpg; sourceTree = "<group>"; };
+		09566F8C298B8A4F00DF6683 /* OrderPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPage.swift; sourceTree = "<group>"; };
 		0970AB0C2988D71D00513CE3 /* CloneStarbucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloneStarbucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0970AB0F2988D71D00513CE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0970AB112988D71D00513CE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		0970AB282988D84500513CE3 /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				09566F8C298B8A4F00DF6683 /* OrderPage.swift */,
 				0970AB2E2988D8B000513CE3 /* Homepage.swift */,
 			);
 			path = Page;
@@ -177,6 +180,7 @@
 				0970AB102988D71D00513CE3 /* AppDelegate.swift in Sources */,
 				0970AB122988D71D00513CE3 /* SceneDelegate.swift in Sources */,
 				0970AB2F2988D8B000513CE3 /* Homepage.swift in Sources */,
+				09566F8D298B8A4F00DF6683 /* OrderPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

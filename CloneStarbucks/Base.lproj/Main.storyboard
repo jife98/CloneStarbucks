@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="60i-4U-V2x" customClass="Homepage" customModule="CloneStarbucks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m3z-7U-vcA">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="1400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhB-14-89t" userLabel="헤더뷰">
@@ -130,7 +130,7 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qjc-ye-nwl">
-                                <rect key="frame" x="0.0" y="295" width="393" height="1022"/>
+                                <rect key="frame" x="0.0" y="295" width="393" height="474"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1M-9z-Lyq">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="1200"/>
@@ -142,7 +142,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="457"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_1755.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WTV-jz-x4i">
-                                                                <rect key="frame" x="0.0" y="0.0" width="393" height="457"/>
+                                                                <rect key="frame" x="0.0" y="-14" width="393" height="471"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             </imageView>
                                                         </subviews>
@@ -160,7 +160,6 @@
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="hN9-HP-BCc" firstAttribute="leading" secondItem="itc-UJ-kIj" secondAttribute="leading" id="7RG-yz-pUE"/>
-                                                    <constraint firstItem="hN9-HP-BCc" firstAttribute="top" secondItem="itc-UJ-kIj" secondAttribute="top" id="9ab-SP-lBi"/>
                                                     <constraint firstAttribute="trailing" secondItem="hN9-HP-BCc" secondAttribute="trailing" id="ka0-dy-LNk"/>
                                                 </constraints>
                                             </stackView>
@@ -175,14 +174,12 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="j1M-9z-Lyq" firstAttribute="leading" secondItem="GRs-AC-aQc" secondAttribute="leading" id="6rg-QJ-0d5"/>
-                                    <constraint firstItem="j1M-9z-Lyq" firstAttribute="trailing" secondItem="GRs-AC-aQc" secondAttribute="trailing" id="Zkt-zu-ci2"/>
-                                    <constraint firstItem="j1M-9z-Lyq" firstAttribute="top" secondItem="GRs-AC-aQc" secondAttribute="top" id="hGH-Qs-4FH"/>
-                                    <constraint firstItem="j1M-9z-Lyq" firstAttribute="width" secondItem="L6D-JS-BWm" secondAttribute="width" id="qmJ-eC-Md2"/>
-                                    <constraint firstItem="j1M-9z-Lyq" firstAttribute="bottom" secondItem="GRs-AC-aQc" secondAttribute="bottom" id="txD-QF-zfH"/>
+                                    <constraint firstItem="j1M-9z-Lyq" firstAttribute="leading" secondItem="Qjc-ye-nwl" secondAttribute="leading" id="6rg-QJ-0d5"/>
+                                    <constraint firstItem="j1M-9z-Lyq" firstAttribute="trailing" secondItem="Qjc-ye-nwl" secondAttribute="trailing" id="Zkt-zu-ci2"/>
+                                    <constraint firstItem="j1M-9z-Lyq" firstAttribute="top" secondItem="Qjc-ye-nwl" secondAttribute="top" id="hGH-Qs-4FH"/>
+                                    <constraint firstItem="j1M-9z-Lyq" firstAttribute="width" secondItem="Qjc-ye-nwl" secondAttribute="width" id="qmJ-eC-Md2"/>
+                                    <constraint firstItem="j1M-9z-Lyq" firstAttribute="bottom" secondItem="Qjc-ye-nwl" secondAttribute="bottom" id="txD-QF-zfH"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="GRs-AC-aQc"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="L6D-JS-BWm"/>
                                 <connections>
                                     <outlet property="delegate" destination="60i-4U-V2x" id="K2f-nS-L2A"/>
                                 </connections>
@@ -207,7 +204,6 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="T7C-pM-9xw"/>
-                    <size key="freeformSize" width="393" height="1400"/>
                     <connections>
                         <outlet property="Topview" destination="qhB-14-89t" id="dF5-mV-Ttt"/>
                         <outlet property="headerview" destination="Vkb-QA-vsP" id="YF5-fr-KQx"/>
@@ -227,30 +223,143 @@
                     <view key="view" contentMode="scaleToFill" id="JFr-bd-75u">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8s-uG-oYT">
+                                <rect key="frame" x="0.0" y="59" width="393" height="250"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GjT-uK-qFc">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <textAttributes key="titleTextAttributes">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </textAttributes>
+                                        <textAttributes key="largeTitleTextAttributes">
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </textAttributes>
+                                        <items>
+                                            <navigationItem id="AEg-E0-htQ">
+                                                <barButtonItem key="rightBarButtonItem" image="magnifyingglass" catalog="system" id="9Pz-6C-d36">
+                                                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="tintColor" red="0.95854152290000005" green="0.95854152290000005" blue="0.95854152290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="qxo-uN-XaN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Vf6-fB-def"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e8s-uG-oYT" firstAttribute="leading" secondItem="Vf6-fB-def" secondAttribute="leading" id="D3n-Wb-0P9"/>
+                            <constraint firstItem="Vf6-fB-def" firstAttribute="trailing" secondItem="e8s-uG-oYT" secondAttribute="trailing" id="pp7-qe-vPF"/>
+                            <constraint firstItem="e8s-uG-oYT" firstAttribute="top" secondItem="Vf6-fB-def" secondAttribute="top" id="yQC-76-Vgd"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="pay" image="creditcard" catalog="system" id="NjZ-99-1ah"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGs-1N-lTp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-189" y="185"/>
+            <point key="canvasLocation" x="-190.07633587786259" y="184.50704225352115"/>
         </scene>
         <!--Order-->
         <scene sceneID="XJ6-yM-1Mm">
             <objects>
-                <viewController id="5bg-uv-CJG" sceneMemberID="viewController">
+                <viewController id="5bg-uv-CJG" customClass="OrderPage" customModule="CloneStarbucks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nBW-FY-ulW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WjL-tg-AmS">
+                                <rect key="frame" x="0.0" y="59" width="393" height="174"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oP9-40-bbS">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <items>
+                                            <navigationItem title="Order" id="v8n-rW-0Do">
+                                                <barButtonItem key="rightBarButtonItem" image="magnifyingglass" catalog="system" id="P9z-C6-sgi">
+                                                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7o-al-RzD">
+                                        <rect key="frame" x="0.0" y="44" width="393" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D63-om-a3r">
+                                        <rect key="frame" x="0.0" y="86" width="393" height="44"/>
+                                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <items>
+                                            <navigationItem id="HPr-wi-EAz">
+                                                <nil key="title"/>
+                                                <barButtonItem key="leftBarButtonItem" style="plain" id="9o4-3f-MF0">
+                                                    <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="waG-1t-kir">
+                                                        <rect key="frame" x="16" y="3" width="93.333333333333329" height="38"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="전체 메뉴">
+                                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                            <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </barButtonItem>
+                                                <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="knT-2m-kt2">
+                                                    <rect key="frame" x="115.33333333333334" y="5" width="109.33333333333334" height="34.333333333333336"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="나만의 메뉴">
+                                                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                        <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </buttonConfiguration>
+                                                </button>
+                                                <barButtonItem key="rightBarButtonItem" style="plain" id="HTJ-TN-8PB">
+                                                    <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="X8d-NJ-yKg">
+                                                        <rect key="frame" x="230.66666666666663" y="5" width="146.33333333333337" height="34.333333333333336"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="birthday.cake" catalog="system" title="홀케이크 예약">
+                                                            <color key="baseForegroundColor" red="0.13390205488765605" green="0.55180302372685186" blue="0.28355389538984277" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GE9-nd-Ul4">
+                                        <rect key="frame" x="0.0" y="130" width="393" height="44"/>
+                                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <items>
+                                            <navigationItem id="Tia-5F-JMd">
+                                                <leftBarButtonItems>
+                                                    <barButtonItem title="Item" id="Lqv-Ek-Wra"/>
+                                                    <barButtonItem title="Item" id="sIs-ct-TSL"/>
+                                                    <barButtonItem title="Item" id="rP2-TJ-GiX"/>
+                                                </leftBarButtonItems>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="c22-aa-Wj6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Order" id="vdT-4m-rXu"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXD-0c-yO4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="576" y="185"/>
+            <point key="canvasLocation" x="574.80916030534354" y="184.50704225352115"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="XiT-gC-Yac">
@@ -310,10 +419,12 @@
         <image name="IMG_1754 2.jpg" width="390" height="192.66667175292969"/>
         <image name="IMG_1755.jpg" width="360.66665649414062" height="417.33334350585938"/>
         <image name="bell" catalog="system" width="125" height="128"/>
+        <image name="birthday.cake" catalog="system" width="128" height="115"/>
         <image name="creditcard" catalog="system" width="128" height="88"/>
         <image name="envelope" catalog="system" width="128" height="93"/>
         <image name="giftcard" catalog="system" width="128" height="88"/>
         <image name="house" catalog="system" width="128" height="104"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
