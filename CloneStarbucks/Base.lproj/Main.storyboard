@@ -17,21 +17,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj0-bb-6aC" customClass="MyBtn" customModule="CloneStarbucks" customModuleProvider="target">
-                                <rect key="frame" x="280" y="720" width="75" height="35"/>
+                                <rect key="frame" x="221.33333333333337" y="720" width="133.66666666666663" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Sz1-md-9fT"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="jPp-CR-f0U"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button" cornerStyle="large">
-                                    <backgroundConfiguration key="background"/>
+                                <buttonConfiguration key="configuration" style="filled" image="bicycle" catalog="system" title="  Delivers" cornerStyle="large">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.13338598609999999" green="0.55339092020000002" blue="0.28161418440000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
+                                        <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -398,11 +400,27 @@
                         <outlet property="floatingBtn" destination="Lj0-bb-6aC" id="D5p-78-5lR"/>
                         <outlet property="headerview" destination="Vkb-QA-vsP" id="YF5-fr-KQx"/>
                         <outlet property="scrollView" destination="ZiW-8a-eKF" id="CJN-Ja-EB9"/>
+                        <outlet property="statusBar" destination="PBT-jV-ay6" id="SeC-ly-NMo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2x1-q0-RfI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-970.2290076335878" y="184.50704225352115"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oJ0-ol-1fB">
+            <objects>
+                <viewController id="Pxj-w8-b2m" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tpb-ic-KUM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XNS-L3-2jV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TbC-qs-hC7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-970" y="896"/>
         </scene>
         <!--pay-->
         <scene sceneID="De5-rR-AtM">
@@ -467,7 +485,7 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="589"/>
                                 <subviews>
                                     <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oP9-40-bbS">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="123"/>
                                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <items>
                                             <navigationItem id="v8n-rW-0Do">
@@ -478,52 +496,40 @@
                                         </items>
                                     </navigationBar>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7o-al-RzD">
-                                        <rect key="frame" x="0.0" y="44" width="393" height="42"/>
+                                        <rect key="frame" x="0.0" y="123" width="393" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D63-om-a3r">
-                                        <rect key="frame" x="0.0" y="86" width="393" height="44"/>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D63-om-a3r" userLabel="전체메뉴,나만의메뉴">
+                                        <rect key="frame" x="0.0" y="165" width="393" height="44"/>
                                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <items>
                                             <navigationItem id="HPr-wi-EAz">
                                                 <nil key="title"/>
-                                                <barButtonItem key="leftBarButtonItem" style="plain" id="9o4-3f-MF0">
-                                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="waG-1t-kir">
-                                                        <rect key="frame" x="16" y="3" width="93.333333333333329" height="38"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="전체 메뉴">
-                                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
-                                                            <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </buttonConfiguration>
-                                                    </button>
-                                                </barButtonItem>
-                                                <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="knT-2m-kt2">
-                                                    <rect key="frame" x="115.33333333333334" y="5" width="109.33333333333334" height="34.333333333333336"/>
+                                                <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="91d-I3-jr5" customClass="seg" customModule="CloneStarbucks" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="5.6666666666666679" width="208.66666666666666" height="33"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="나만의 메뉴">
-                                                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
-                                                        <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </buttonConfiguration>
-                                                </button>
+                                                    <segments>
+                                                        <segment title="전체 메뉴"/>
+                                                        <segment title="나만의 메뉴"/>
+                                                    </segments>
+                                                </segmentedControl>
                                                 <barButtonItem key="rightBarButtonItem" style="plain" id="HTJ-TN-8PB">
                                                     <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="X8d-NJ-yKg">
                                                         <rect key="frame" x="230.66666666666663" y="5" width="146.33333333333337" height="34.333333333333336"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="birthday.cake" catalog="system" title="홀케이크 예약">
-                                                            <color key="baseForegroundColor" red="0.13390205488765605" green="0.55180302372685186" blue="0.28355389538984277" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="baseForegroundColor" red="0.13338598609999999" green="0.55339092020000002" blue="0.28161418440000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                 </barButtonItem>
                                             </navigationItem>
                                         </items>
                                     </navigationBar>
-                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GE9-nd-Ul4">
-                                        <rect key="frame" x="0.0" y="130" width="393" height="44"/>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GE9-nd-Ul4" userLabel="음료 푸드 상품">
+                                        <rect key="frame" x="0.0" y="209" width="393" height="44"/>
                                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <items>
                                             <navigationItem id="Tia-5F-JMd">
@@ -541,8 +547,8 @@
                                             </navigationItem>
                                         </items>
                                     </navigationBar>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ulr-aP-fWL" customClass="Scrollview" customModule="CloneStarbucks" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="174" width="393" height="415"/>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ulr-aP-fWL" userLabel="메뉴 스크롤" customClass="Scrollview" customModule="CloneStarbucks" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="253" width="393" height="336"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HWZ-ir-YbE">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="1152"/>
@@ -648,24 +654,46 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RBg-07-YXK">
-                                <rect key="frame" x="0.0" y="641" width="393" height="79"/>
+                                <rect key="frame" x="0.0" y="656" width="393" height="196"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjK-25-MNn" customClass="MyBtn" customModule="CloneStarbucks" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="17" width="333.33333333333331" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system" imagePlacement="trailing" title="주문할 매장을 선택해주세요.                      " titleAlignment="center">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bag" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EFD-Zp-7qS">
+                                        <rect key="frame" x="342" y="12" width="51" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.13338598609999999" green="0.55339092020000002" blue="0.28161418440000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.15686274509803921" green="0.14117647058823529" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="79" id="7ql-gX-qG8"/>
+                                    <constraint firstItem="tjK-25-MNn" firstAttribute="top" secondItem="RBg-07-YXK" secondAttribute="top" constant="15" id="E7f-kQ-pCs"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="c22-aa-Wj6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="RBg-07-YXK" firstAttribute="trailing" secondItem="c22-aa-Wj6" secondAttribute="trailing" id="3zS-Ur-Sto"/>
-                            <constraint firstItem="RBg-07-YXK" firstAttribute="trailing" secondItem="c22-aa-Wj6" secondAttribute="trailing" id="7qJ-Nh-nLf"/>
-                            <constraint firstItem="WjL-tg-AmS" firstAttribute="leading" secondItem="RBg-07-YXK" secondAttribute="leading" id="9bS-M1-9a6"/>
-                            <constraint firstItem="RBg-07-YXK" firstAttribute="leading" secondItem="c22-aa-Wj6" secondAttribute="leading" id="Ni3-Vf-z6B"/>
-                            <constraint firstItem="RBg-07-YXK" firstAttribute="leading" secondItem="c22-aa-Wj6" secondAttribute="leading" id="Rie-rd-aJV"/>
+                            <constraint firstItem="RBg-07-YXK" firstAttribute="top" secondItem="WjL-tg-AmS" secondAttribute="bottom" constant="8" symbolic="YES" id="8wp-7f-3ov"/>
+                            <constraint firstItem="RBg-07-YXK" firstAttribute="leading" secondItem="WjL-tg-AmS" secondAttribute="leading" id="CCv-O3-zdW"/>
+                            <constraint firstItem="WjL-tg-AmS" firstAttribute="leading" secondItem="nBW-FY-ulW" secondAttribute="leading" id="K6W-2s-EG7"/>
+                            <constraint firstAttribute="bottom" secondItem="RBg-07-YXK" secondAttribute="bottom" id="UFU-51-NGE"/>
                             <constraint firstItem="WjL-tg-AmS" firstAttribute="top" secondItem="c22-aa-Wj6" secondAttribute="top" id="cKs-MZ-tEB"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="RBg-07-YXK" secondAttribute="bottom" id="d1r-cg-Yll"/>
+                            <constraint firstAttribute="bottom" secondItem="RBg-07-YXK" secondAttribute="bottom" id="ixR-I8-ZGf"/>
                             <constraint firstItem="c22-aa-Wj6" firstAttribute="bottom" secondItem="WjL-tg-AmS" secondAttribute="bottom" constant="72" id="kA0-IB-0RG"/>
+                            <constraint firstItem="RBg-07-YXK" firstAttribute="trailing" secondItem="WjL-tg-AmS" secondAttribute="trailing" id="mkT-T9-7Vr"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Order" image="cup.and.saucer.fill" catalog="system" id="vdT-4m-rXu"/>
@@ -673,7 +701,9 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="Label" destination="q7o-al-RzD" id="cCo-Mg-ybb"/>
+                        <outlet property="SegmentedController" destination="91d-I3-jr5" id="iSt-Q7-H9R"/>
                         <outlet property="TopNavi" destination="oP9-40-bbS" id="blh-wY-VGc"/>
+                        <outlet property="choiceBtn" destination="tjK-25-MNn" id="e4w-4S-Xns"/>
                         <outlet property="scrollView" destination="Ulr-aP-fWL" id="zJG-hx-Sbt"/>
                     </connections>
                 </viewController>
@@ -760,9 +790,12 @@
         <image name="IMG_1783.jpg" width="354.33334350585938" height="186.33332824707031"/>
         <image name="IMG_1784.jpg" width="364.33334350585938" height="211.33332824707031"/>
         <image name="IMG_1785.jpg" width="354.33334350585938" height="181.66667175292969"/>
+        <image name="bag" catalog="system" width="128" height="128"/>
         <image name="bag.fill" catalog="system" width="128" height="128"/>
         <image name="bell" catalog="system" width="125" height="128"/>
+        <image name="bicycle" catalog="system" width="128" height="78"/>
         <image name="birthday.cake" catalog="system" width="128" height="115"/>
+        <image name="chevron.down" catalog="system" width="128" height="70"/>
         <image name="creditcard" catalog="system" width="128" height="88"/>
         <image name="cup.and.saucer.fill" catalog="system" width="128" height="91"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>

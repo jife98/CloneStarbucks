@@ -8,6 +8,7 @@
 import UIKit
 
 class Homepage: UIViewController, UIScrollViewDelegate {
+    @IBOutlet weak var statusBar: UIView!
     @IBOutlet weak var Topview: UIView!
     @IBOutlet weak var headerview: UIView!
     var viewBlurEffect:UIVisualEffectView!
@@ -29,9 +30,11 @@ class Homepage: UIViewController, UIScrollViewDelegate {
         
         if(scrollView.contentOffset.y >= 40 ){
             Topview.isHidden = true
+            statusBar.backgroundColor = .white
         }
         else {
             Topview.isHidden = false
+            statusBar.backgroundColor = UIColor(displayP3Red: 255/255, green: 226/255, blue: 149/255, alpha: 1)
 
         }
         print(scrollView.contentOffset.y)
