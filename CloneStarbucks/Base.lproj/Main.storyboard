@@ -11,13 +11,13 @@
         <!--Home-->
         <scene sceneID="d00-PR-VYv">
             <objects>
-                <viewController id="60i-4U-V2x" customClass="Homepage" customModule="CloneStarbucks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="60i-4U-V2x" customClass="Homepage" customModule="CloneStarbucks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m3z-7U-vcA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj0-bb-6aC" customClass="MyBtn" customModule="CloneStarbucks" customModuleProvider="target">
-                                <rect key="frame" x="221.33333333333337" y="720" width="133.66666666666663" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj0-bb-6aC" customClass="MyBtn" customModule="CloneStarbucks" customModuleProvider="target">
+                                <rect key="frame" x="221.33333333333337" y="622" width="133.66666666666663" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Sz1-md-9fT"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="jPp-CR-f0U"/>
@@ -37,6 +37,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="DliverryBtn:" destination="60i-4U-V2x" eventType="touchUpInside" id="NQG-z1-uH1"/>
+                                    <action selector="GoToDlivery:" destination="60i-4U-V2x" eventType="touchUpInside" id="2bl-bF-4RI"/>
                                     <action selector="floating:" destination="60i-4U-V2x" eventType="touchUpInside" id="OIJ-W7-NgV"/>
                                 </connections>
                             </button>
@@ -172,7 +174,7 @@
                                                 </items>
                                             </navigationBar>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="lNy-Mc-wES" firstAttribute="leading" secondItem="Vkb-QA-vsP" secondAttribute="leading" id="Pky-W5-8xO"/>
                                             <constraint firstAttribute="width" constant="393" id="U0u-EG-3L4"/>
@@ -386,6 +388,7 @@
                         <constraints>
                             <constraint firstItem="0jp-yp-7bm" firstAttribute="trailing" secondItem="8SX-jd-FN6" secondAttribute="trailing" id="5Yy-Gc-se9"/>
                             <constraint firstItem="0jp-yp-7bm" firstAttribute="leading" secondItem="8SX-jd-FN6" secondAttribute="leading" id="IM6-jY-tGT"/>
+                            <constraint firstItem="Lj0-bb-6aC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8SX-jd-FN6" secondAttribute="leading" symbolic="YES" id="IQh-VW-eiu"/>
                             <constraint firstItem="8SX-jd-FN6" firstAttribute="bottom" secondItem="Lj0-bb-6aC" secondAttribute="bottom" constant="14" id="P53-Do-ksY"/>
                             <constraint firstItem="8SX-jd-FN6" firstAttribute="trailing" secondItem="Lj0-bb-6aC" secondAttribute="trailing" constant="38" id="coK-X6-Dmf"/>
                             <constraint firstItem="0jp-yp-7bm" firstAttribute="top" secondItem="m3z-7U-vcA" secondAttribute="top" id="iWm-gr-OEn"/>
@@ -395,32 +398,149 @@
                         <color key="badgeColor" red="0.00080242286990000002" green="0.64265324830000004" blue="0.00124491404" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="1qF-W5-MIb"/>
                     <connections>
                         <outlet property="Topview" destination="qhB-14-89t" id="dF5-mV-Ttt"/>
                         <outlet property="floatingBtn" destination="Lj0-bb-6aC" id="D5p-78-5lR"/>
                         <outlet property="headerview" destination="Vkb-QA-vsP" id="YF5-fr-KQx"/>
                         <outlet property="scrollView" destination="ZiW-8a-eKF" id="CJN-Ja-EB9"/>
                         <outlet property="statusBar" destination="PBT-jV-ay6" id="SeC-ly-NMo"/>
+                        <outlet property="view" destination="m3z-7U-vcA" id="s6H-Dr-4t8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2x1-q0-RfI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-970.2290076335878" y="184.50704225352115"/>
         </scene>
-        <!--View Controller-->
+        <!--Delivery Page-->
         <scene sceneID="oJ0-ol-1fB">
             <objects>
-                <viewController id="Pxj-w8-b2m" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Pxj-w8-b2m" customClass="DeliveryPage" customModule="CloneStarbucks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tpb-ic-KUM">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Rh-JN-eEX">
+                                <rect key="frame" x="0.0" y="45" width="393" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="Delivers" id="HTb-t0-pLM">
+                                        <barButtonItem key="leftBarButtonItem" image="arrow.backward" catalog="system" id="5oZ-DX-TZM">
+                                            <color key="tintColor" red="0.196046412" green="0.1724778414" blue="0.1677029431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="3lC-Xb-gGN" kind="show" id="xXK-YV-8SY"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7UI-P9-rgj">
+                                <rect key="frame" x="0.0" y="89" width="393" height="226"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   어디로 찾아갈까요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K22-M0-iaz">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPU-0F-nPL">
+                                        <rect key="frame" x="0.0" y="36" width="393" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="left" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mk4-uL-zPC">
+                                                <rect key="frame" x="295" y="13" width="78" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="qeP-yU-UJE"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="배달 가능 지역 안내">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="8Hb-q8-MRI"/>
+                                            <constraint firstAttribute="trailing" secondItem="Mk4-uL-zPC" secondAttribute="trailing" constant="20" id="J1X-6u-Bj8"/>
+                                            <constraint firstItem="Mk4-uL-zPC" firstAttribute="top" secondItem="hPU-0F-nPL" secondAttribute="top" constant="13" id="dBJ-3x-LbE"/>
+                                            <constraint firstAttribute="bottom" secondItem="Mk4-uL-zPC" secondAttribute="bottom" constant="12" id="qqb-g4-g1u"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFJ-X7-0cb">
+                                        <rect key="frame" x="0.0" y="86" width="393" height="70"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="주소를 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gF4-S5-bc2">
+                                                <rect key="frame" x="22" y="18" width="339" height="34"/>
+                                                <color key="textColor" red="0.20994707939999999" green="0.1866778731" blue="0.1819680333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="gF4-S5-bc2" secondAttribute="trailing" constant="32" id="5DF-fX-Fh6"/>
+                                            <constraint firstItem="gF4-S5-bc2" firstAttribute="top" secondItem="jFJ-X7-0cb" secondAttribute="top" constant="18" id="Dkj-JY-lNT"/>
+                                            <constraint firstAttribute="height" constant="70" id="OXc-uV-eWk"/>
+                                            <constraint firstItem="gF4-S5-bc2" firstAttribute="leading" secondItem="jFJ-X7-0cb" secondAttribute="leading" constant="22" id="nkn-aa-R5h"/>
+                                            <constraint firstAttribute="bottom" secondItem="gF4-S5-bc2" secondAttribute="bottom" constant="18" id="unu-H5-f1D"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uCu-oO-d7O">
+                                        <rect key="frame" x="0.0" y="156" width="393" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFE-JH-yge" customClass="MyBtn" customModule="CloneStarbucks" customModuleProvider="target">
+                                                <rect key="frame" x="23" y="18" width="328" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="주소 검색">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="SetSearch:" destination="Pxj-w8-b2m" eventType="touchUpInside" id="ZAc-JC-NDz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="6Fx-Im-II8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="jFJ-X7-0cb" secondAttribute="trailing" id="E8x-zC-X7j"/>
+                                    <constraint firstItem="hPU-0F-nPL" firstAttribute="leading" secondItem="7UI-P9-rgj" secondAttribute="leading" id="FiS-xP-n9P"/>
+                                    <constraint firstItem="jFJ-X7-0cb" firstAttribute="leading" secondItem="7UI-P9-rgj" secondAttribute="leading" id="RLz-0H-gQq"/>
+                                    <constraint firstItem="jFJ-X7-0cb" firstAttribute="top" secondItem="hPU-0F-nPL" secondAttribute="bottom" id="Vza-SL-gNW"/>
+                                    <constraint firstItem="hPU-0F-nPL" firstAttribute="top" secondItem="K22-M0-iaz" secondAttribute="bottom" id="azj-tg-bZ4"/>
+                                    <constraint firstAttribute="trailing" secondItem="hPU-0F-nPL" secondAttribute="trailing" id="j25-M2-nmG"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="XNS-L3-2jV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Rh-JN-eEX" firstAttribute="top" secondItem="tpb-ic-KUM" secondAttribute="topMargin" constant="-14" id="Jgn-YU-aUZ"/>
+                            <constraint firstItem="7UI-P9-rgj" firstAttribute="leading" secondItem="XNS-L3-2jV" secondAttribute="leading" id="N4J-tQ-aXh"/>
+                            <constraint firstItem="7UI-P9-rgj" firstAttribute="top" secondItem="4Rh-JN-eEX" secondAttribute="bottom" id="W2w-0J-iyB"/>
+                            <constraint firstItem="4Rh-JN-eEX" firstAttribute="trailing" secondItem="7UI-P9-rgj" secondAttribute="trailing" id="iZ0-eq-adu"/>
+                            <constraint firstItem="XNS-L3-2jV" firstAttribute="trailing" secondItem="7UI-P9-rgj" secondAttribute="trailing" id="uv2-9f-xuT"/>
+                            <constraint firstItem="4Rh-JN-eEX" firstAttribute="leading" secondItem="7UI-P9-rgj" secondAttribute="leading" id="xzK-Rh-u9F"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="odS-qQ-AtE"/>
+                    <connections>
+                        <outlet property="Address" destination="gF4-S5-bc2" id="EwQ-6e-13z"/>
+                        <outlet property="SearchBtn" destination="hFE-JH-yge" id="EXI-4A-Dgx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TbC-qs-hC7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-970" y="896"/>
+            <point key="canvasLocation" x="574.80916030534354" y="948.59154929577471"/>
         </scene>
         <!--pay-->
         <scene sceneID="De5-rR-AtM">
@@ -476,7 +596,7 @@
         <!--Order-->
         <scene sceneID="XJ6-yM-1Mm">
             <objects>
-                <viewController id="5bg-uv-CJG" customClass="OrderPage" customModule="CloneStarbucks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OrderPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5bg-uv-CJG" customClass="OrderPage" customModule="CloneStarbucks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nBW-FY-ulW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -657,7 +777,7 @@
                                 <rect key="frame" x="0.0" y="656" width="393" height="196"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjK-25-MNn" customClass="MyBtn" customModule="CloneStarbucks" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="17" width="333.33333333333331" height="35"/>
+                                        <rect key="frame" x="8" y="15.000000000000004" width="333.33333333333331" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system" imagePlacement="trailing" title="주문할 매장을 선택해주세요.                      " titleAlignment="center">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -670,16 +790,21 @@
                                                 <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Pxj-w8-b2m" kind="show" id="oAO-ko-Dmg"/>
+                                        </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bag" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EFD-Zp-7qS">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bag" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EFD-Zp-7qS">
                                         <rect key="frame" x="342" y="12" width="51" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.13338598609999999" green="0.55339092020000002" blue="0.28161418440000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.15686274509803921" green="0.14117647058823529" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="tjK-25-MNn" firstAttribute="leading" secondItem="RBg-07-YXK" secondAttribute="leadingMargin" id="0uf-vy-sXS"/>
                                     <constraint firstItem="tjK-25-MNn" firstAttribute="top" secondItem="RBg-07-YXK" secondAttribute="top" constant="15" id="E7f-kQ-pCs"/>
+                                    <constraint firstItem="EFD-Zp-7qS" firstAttribute="leading" secondItem="tjK-25-MNn" secondAttribute="trailing" constant="0.66666666666668561" id="YjZ-ua-jl0"/>
+                                    <constraint firstItem="tjK-25-MNn" firstAttribute="centerY" secondItem="EFD-Zp-7qS" secondAttribute="centerY" id="dmx-tY-MY3"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -698,9 +823,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Order" image="cup.and.saucer.fill" catalog="system" id="vdT-4m-rXu"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="zfC-H0-M5R"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="Label" destination="q7o-al-RzD" id="cCo-Mg-ybb"/>
+                        <outlet property="Label" destination="q7o-al-RzD" id="NjO-Fn-gtV"/>
                         <outlet property="SegmentedController" destination="91d-I3-jr5" id="iSt-Q7-H9R"/>
                         <outlet property="TopNavi" destination="oP9-40-bbS" id="blh-wY-VGc"/>
                         <outlet property="choiceBtn" destination="tjK-25-MNn" id="e4w-4S-Xns"/>
@@ -711,10 +837,11 @@
             </objects>
             <point key="canvasLocation" x="574.80916030534354" y="184.50704225352115"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--View Controller-->
         <scene sceneID="XiT-gC-Yac">
             <objects>
-                <tabBarController id="3lC-Xb-gGN" customClass="TabBarController" customModule="CloneStarbucks" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="3lC-Xb-gGN" customClass="TViewController" customModule="CloneStarbucks" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hft-mN-4Xd"/>
                     <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GpI-ll-KEW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -790,6 +917,7 @@
         <image name="IMG_1783.jpg" width="354.33334350585938" height="186.33332824707031"/>
         <image name="IMG_1784.jpg" width="364.33334350585938" height="211.33332824707031"/>
         <image name="IMG_1785.jpg" width="354.33334350585938" height="181.66667175292969"/>
+        <image name="arrow.backward" catalog="system" width="128" height="95"/>
         <image name="bag" catalog="system" width="128" height="128"/>
         <image name="bag.fill" catalog="system" width="128" height="128"/>
         <image name="bell" catalog="system" width="125" height="128"/>
@@ -805,9 +933,6 @@
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

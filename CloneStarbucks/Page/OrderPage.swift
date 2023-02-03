@@ -16,6 +16,7 @@ class OrderPage: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var TopNavi: UINavigationBar!
     @IBOutlet weak var Label: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
+    var text : String = ""
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         if(scrollView.contentOffset.y >= 20){
@@ -38,6 +39,9 @@ class OrderPage: UIViewController, UIScrollViewDelegate {
         SegmentedController.setDividerImage(image, forLeftSegmentState: .selected, rightSegmentState: .normal, barMetrics: .default)
     }
 
+    @IBAction func ChoiceAction(_ sender: Any) {
+        print("1")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         TopNavi.shadowImage = UIImage()
@@ -47,6 +51,9 @@ class OrderPage: UIViewController, UIScrollViewDelegate {
         let borderBottom = UIView(frame: frame)
         borderBottom.backgroundColor = UIColor.gray
         choiceBtn.addSubview(borderBottom)
+        //choiceBtn.setTitle(text, for: .normal)
+        print(text)
+        
     }
 
     

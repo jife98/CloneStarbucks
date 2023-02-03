@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		091268AB2989539300E98A9E /* IMG_1755.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 091268AA2989539300E98A9E /* IMG_1755.jpg */; };
+		0915BAAC298D6E79002FA9F5 /* deliveryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0915BAAB298D6E79002FA9F5 /* deliveryDelegate.swift */; };
+		0915BAAE298D756C002FA9F5 /* DeliveryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0915BAAD298D756C002FA9F5 /* DeliveryPage.swift */; };
 		09403F87298D51E1002430BC /* seg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09403F86298D51E1002430BC /* seg.swift */; };
 		09566F8D298B8A4F00DF6683 /* OrderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09566F8C298B8A4F00DF6683 /* OrderPage.swift */; };
 		0970AB102988D71D00513CE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970AB0F2988D71D00513CE3 /* AppDelegate.swift */; };
@@ -26,6 +28,7 @@
 		09AC65F1298C0E0E00087943 /* IMG_1783.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09AC65EE298C0E0E00087943 /* IMG_1783.jpg */; };
 		09AC65F2298C0E0E00087943 /* IMG_1784.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09AC65EF298C0E0E00087943 /* IMG_1784.jpg */; };
 		09AC65F3298C0E0E00087943 /* IMG_1785.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09AC65F0298C0E0E00087943 /* IMG_1785.jpg */; };
+		09DAB3B8298D97E500476CEE /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DAB3B7298D97E500476CEE /* Launch.swift */; };
 		09F296F52988E26F00A60337 /* home_img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F296F42988E26F00A60337 /* home_img1.jpg */; };
 		09F296F72988E78400A60337 /* IMG_1754 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F296F62988E78400A60337 /* IMG_1754 2.jpg */; };
 		09F5AA10298BE79D00797C73 /* IMG_1776 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F5AA03298BE79D00797C73 /* IMG_1776 3.jpg */; };
@@ -48,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		091268AA2989539300E98A9E /* IMG_1755.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1755.jpg; path = ../../../../Downloads/IMG_1755.jpg; sourceTree = "<group>"; };
+		0915BAAB298D6E79002FA9F5 /* deliveryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deliveryDelegate.swift; sourceTree = "<group>"; };
+		0915BAAD298D756C002FA9F5 /* DeliveryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryPage.swift; sourceTree = "<group>"; };
 		09403F86298D51E1002430BC /* seg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seg.swift; sourceTree = "<group>"; };
 		09566F8C298B8A4F00DF6683 /* OrderPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPage.swift; sourceTree = "<group>"; };
 		0970AB0C2988D71D00513CE3 /* CloneStarbucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloneStarbucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +73,7 @@
 		09AC65EE298C0E0E00087943 /* IMG_1783.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1783.jpg; path = ../../../../Downloads/IMG_1783.jpg; sourceTree = "<group>"; };
 		09AC65EF298C0E0E00087943 /* IMG_1784.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1784.jpg; path = ../../../../Downloads/IMG_1784.jpg; sourceTree = "<group>"; };
 		09AC65F0298C0E0E00087943 /* IMG_1785.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1785.jpg; path = ../../../../Downloads/IMG_1785.jpg; sourceTree = "<group>"; };
+		09DAB3B7298D97E500476CEE /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		09F296F42988E26F00A60337 /* home_img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = home_img1.jpg; path = ../../../../Downloads/home_img1.jpg; sourceTree = "<group>"; };
 		09F296F62988E78400A60337 /* IMG_1754 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "IMG_1754 2.jpg"; path = "../../../../Downloads/IMG_1754 2.jpg"; sourceTree = "<group>"; };
 		09F5AA03298BE79D00797C73 /* IMG_1776 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "IMG_1776 3.jpg"; path = "../../../../Downloads/IMG_1776 3.jpg"; sourceTree = "<group>"; };
@@ -124,6 +130,7 @@
 				0970AB152988D71D00513CE3 /* Main.storyboard */,
 				0970AB182988D71E00513CE3 /* Assets.xcassets */,
 				0970AB1A2988D71E00513CE3 /* LaunchScreen.storyboard */,
+				09DAB3B7298D97E500476CEE /* Launch.swift */,
 				0970AB1D2988D71E00513CE3 /* Info.plist */,
 				09A249BD298D13510033FB27 /* Controller */,
 				0970AB292988D85200513CE3 /* IMG */,
@@ -135,6 +142,7 @@
 		0970AB282988D84500513CE3 /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				0915BAAD298D756C002FA9F5 /* DeliveryPage.swift */,
 				09566F8C298B8A4F00DF6683 /* OrderPage.swift */,
 				0970AB2E2988D8B000513CE3 /* Homepage.swift */,
 			);
@@ -180,6 +188,7 @@
 				09F5AA1F298BF58400797C73 /* TabBar.swift */,
 				09F5AA1D298BEBFF00797C73 /* Scrollview.swift */,
 				09A249BE298D13820033FB27 /* MyBtn.swift */,
+				0915BAAB298D6E79002FA9F5 /* deliveryDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -281,12 +290,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				09A249BF298D13820033FB27 /* MyBtn.swift in Sources */,
+				0915BAAE298D756C002FA9F5 /* DeliveryPage.swift in Sources */,
 				09403F87298D51E1002430BC /* seg.swift in Sources */,
+				0915BAAC298D6E79002FA9F5 /* deliveryDelegate.swift in Sources */,
 				0970AB142988D71D00513CE3 /* ViewController.swift in Sources */,
 				0970AB102988D71D00513CE3 /* AppDelegate.swift in Sources */,
 				0970AB122988D71D00513CE3 /* SceneDelegate.swift in Sources */,
 				09F5AA1E298BEBFF00797C73 /* Scrollview.swift in Sources */,
 				0970AB2F2988D8B000513CE3 /* Homepage.swift in Sources */,
+				09DAB3B8298D97E500476CEE /* Launch.swift in Sources */,
 				09566F8D298B8A4F00DF6683 /* OrderPage.swift in Sources */,
 				09F5AA20298BF58400797C73 /* TabBar.swift in Sources */,
 			);
